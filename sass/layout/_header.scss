@@ -5,45 +5,31 @@
     display: flex;
   }
 }
-
-.header-list {
-  display: flex;
-  justify-content: center;
-}
-.header-link {
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: var(--btn);
+.header__link {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    left: 0;
+    background-color: var(--btn);
+    bottom: -32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
-.header-contact {
-  align-items: center;
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
-}
-.site-contacts {
-  display: flex;
-  margin-left: auto;
-}
-.site-link:hover,
-.site-link:focus {
-  color: var(--btn);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.site-contacts-icon {
-  margin-right: 10px;
-  fill: var(--icon-color);
-}
-
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-item {
+.navigation__list {
+  display: flex;
+  justify-content: center;
+}
+.navigation__item {
   margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -52,7 +38,17 @@
   color: var(--color-first-title);
   text-decoration: none;
 }
-.site-contacts {
+.navigation__link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--btn);
+  }
+}
+
+.connect {
+  display: flex;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,7 +61,7 @@
   }
 }
 
-.header-logo {
+.navigation__logo {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
@@ -79,18 +75,21 @@
 .blue-logo {
   color: var(--btn);
 }
-
-.header-top {
-  position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 3px;
-    left: 0;
-    background-color: var(--btn);
-    bottom: -32px;
+.contact {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+.contact__link {
+  color: #757575;
+  &:hover,
+  &:focus {
+    color: var(--btn);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
+}
+.contact__icon {
+  margin-right: 10px;
+  fill: var(--icon-color);
 }

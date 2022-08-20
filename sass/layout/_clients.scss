@@ -6,13 +6,13 @@
   letter-spacing: 0.03em;
   color: #212121;
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
 }
-.clients-item {
+.clients__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -24,7 +24,8 @@
   }
 }
 
-.clients-link {
+.clients__link {
+  @extend %aline-list !Optional;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +41,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }

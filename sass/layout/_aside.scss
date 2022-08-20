@@ -6,16 +6,16 @@
   letter-spacing: 0.03em;
   color: var(--first-title);
 }
-.aside-item {
+.aside__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
-.aside-list {
+.aside__list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.aside-text {
+.aside__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);

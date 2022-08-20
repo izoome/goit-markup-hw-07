@@ -1,35 +1,31 @@
-.user-list {
+.user {
+  background-color: #f5f4fa;
+}
+.user__title {
+  @include font(36, 1.166, 700, 0.03em);
+  text-align: center;
+  color: var(--first-title);
+}
+.user__list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.user-item {
+.user__item {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.user-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--first-title);
+.past__user {
+  padding: 30px 0;
+  background-color: #ffffff;
 }
-.user-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+.user__name {
+  @include font(16, 1.18, 500, 0.03em);
   color: var(--first-title);
   text-align: center;
   margin-bottom: 10px;
 }
 
-.past-user {
-  padding: 30px 0;
-  background-color: #ffffff;
-}
-
-.user-pre-title {
+.user__pretitle {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -37,15 +33,13 @@
   color: #757575;
   margin-bottom: 16px;
 }
-.user {
-  background-color: #f5f4fa;
-}
-.past-user-list {
+
+.past__user-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.past-user-link {
+.past__user-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -61,6 +55,6 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
-.past-user-icon {
+.past__user-icon {
   fill: currentColor;
 }
