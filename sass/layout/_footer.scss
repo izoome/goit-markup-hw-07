@@ -1,0 +1,137 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
+}
+.footer-blue-logo {
+  color: var(--btn);
+}
+.footer-list {
+  margin-top: 20px;
+}
+/*
+.footer-subtitle {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+} */
+.footer-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+  margin-bottom: 9px;
+}
+.footer-item-post {
+  margin-bottom: 9px;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  max-width: 206px;
+}
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: var(--transition-bg);
+  &:hover,
+  &:focus {
+    background-color: var(--btn);
+    color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.footer-social-icon {
+  fill: #ffffff;
+}
+.footer-social-list {
+  gap: 10px;
+}
+
+.social-scr {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.foot-subscribe {
+  margin-left: auto;
+}
+.foot-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+}
+.foot-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 20px;
+}
+.foot-input {
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    border-color: var(--primary-bg-color);
+  }
+}
+
+.foot-btn {
+  position: relative;
+  text-align: left;
+  padding: 10px 28px;
+  width: 200px;
+}
+.foot-icon-send {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
